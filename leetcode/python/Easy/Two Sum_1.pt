@@ -1,0 +1,8 @@
+# s1  
+class Solution(object):
+    def twoSum(self, x, target):
+        for i in range(len(x)):
+            for j in range(i + 1, len(x)):
+                if x[i] + x[j] == target:
+                    out=[i, j]
+        return out
